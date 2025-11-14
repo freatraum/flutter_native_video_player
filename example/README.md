@@ -1,6 +1,6 @@
-# flutter_native_video_player_example
+pro# native_video_player_example
 
-Demonstrates how to use the flutter_native_video_player plugin.
+Demonstrates how to use the native_video_player plugin.
 
 ## Getting Started
 

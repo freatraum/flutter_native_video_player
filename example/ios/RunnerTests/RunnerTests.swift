@@ -2,7 +2,8 @@ import Flutter
 import UIKit
 import XCTest
 
-@testable import flutter_native_video_player
+
+@testable import native_video_player
 
 // This demonstrates a simple unit test of the Swift portion of this plugin's implementation.
 //
@@ -11,7 +12,7 @@ import XCTest
 class RunnerTests: XCTestCase {
 
   func testGetPlatformVersion() {
-    let plugin = FlutterNativeVideoPlayerPlugin()
+    let plugin = NativeVideoPlayerPlugin()
 
     let call = FlutterMethodCall(methodName: "getPlatformVersion", arguments: [])
 

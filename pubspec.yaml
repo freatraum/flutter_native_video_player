@@ -1,24 +1,22 @@
-name: flutter_native_video_player
-description: "An efficient and feature rich video player plugin for Flutter applications,
-  leveraging the power of native APIs ExoPlayer for Android and AVKit for iOS.
-  This plugin offers extensive control over video playback, easy integration
-  and helps to provide an immersive video experience to the users."
-version: 0.0.1
-homepage: "https://github.com/jieshenghow/flutter_native_video_player"
+name: better_native_video_player
+description: Native video player using AVPlayerViewController (iOS) and ExoPlayer (Android) with HLS, Picture-in-Picture, AirPlay, and fullscreen support.
+version: 0.3.3
+homepage: https://github.com/DaniKemper010/native-video-player
+repository: https://github.com/DaniKemper010/native-video-player.git
+issue_tracker: https://github.com/DaniKemper010/native-video-player/issues
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: ">=3.9.0 <4.0.0"
   flutter: '>=3.3.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: 6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -38,10 +36,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.jieshenghow.flutter_native_video_player
-        pluginClass: FlutterNativeVideoPlayerPlugin
+        package: com.huddlecommunity.better_native_video_player
+        pluginClass: NativeVideoPlayerPlugin
       ios:
-        pluginClass: FlutterNativeVideoPlayerPlugin
+        pluginClass: NativeVideoPlayerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
@@ -49,10 +47,10 @@ flutter:
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see
-  # https://flutter.dev/assets-and-images/#from-packages
+  # https://flutter.dev/to/asset-from-package
   #
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
+  # https://flutter.dev/to/resolution-aware-images
 
   # To add custom fonts to your plugin package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
@@ -72,4 +70,4 @@ flutter:
   #         weight: 700
   #
   # For details regarding fonts in packages, see
-  # https://flutter.dev/custom-fonts/#from-packages
+  # https://flutter.dev/to/font-from-package
